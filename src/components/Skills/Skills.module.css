@@ -1,0 +1,57 @@
+.container {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.content_wrapper {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.section_name {
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    text-align: left;
+    font-size: 1.5vw;
+    margin: 1vw 0;
+}
+
+.line {
+    width: 100%;
+    height: 1px;
+    background-color: #219F94;
+}
+
+.skills_wrapper {
+    margin: 10px 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.skill_item_img {
+    width: 5vw;
+}
+
+.skill_item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 10px;
+    width: 300px;
+}
+
+.skill_item_description {
+
+}
+
