@@ -2,6 +2,8 @@ import React from 'react';
 import style from './Information.module.scss';
 import '../../App.css';
 import img from '../../img/free.jpg';
+import InformationItem from "./InformationItem/InformationItem";
+import SocialLinkItem from "./SocialLinkItem/SocialLinkItem";
 
 const Information = () => {
     return (
@@ -9,13 +11,11 @@ const Information = () => {
             <div className={style.information}>
                 <div className={style.photo}>
                     <img src={img} alt="my photo"/>
-                    <div className={style.social}>
-                        <ul>
-                            <li><a href="#"></a>fb</li>
-                            <li><a href="#"></a>in</li>
-                            <li><a href="#"></a>li</li>
-                            <li><a href="#"></a>tg</li>
-                        </ul>
+                    <div className={style.social_wrapper}>
+                        <SocialLinkItem/>
+                        <SocialLinkItem/>
+                        <SocialLinkItem/>
+                        <SocialLinkItem/>
                     </div>
                 </div>
                 <div className={style.description}>
@@ -23,13 +23,11 @@ const Information = () => {
                         <h1>I'm Andrei Riaskov.<br/>I am a frontend developer</h1>
                     </div>
                     <div className={style.divider}></div>
-                    <div className={style.more_information}>
-                        <ul>
-                            <li>06/01/1988</li>
-                            <li>andreiryaskov@gmail.com</li>
-                            <li>89384136353</li>
-                            <li>NewYork</li>
-                        </ul>
+                    <div className={style.contacts_wrapper}>
+                        <InformationItem/>
+                        <InformationItem/>
+                        <InformationItem/>
+                        <InformationItem/>
                     </div>
                 </div>
             </div>
