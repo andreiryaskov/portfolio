@@ -5,15 +5,17 @@ import NavItem from "./NavItem/NavItem";
 
 const Header = () => {
     return (
-        <header className='container'>
-            <nav className={style.nav_wrapper}>
-                <NavItem/>
-                <NavItem/>
-                <NavItem/>
-                <NavItem/>
-                <NavItem/>
-            </nav>
-        </header>
+        <div className='container'>
+            <header className={style.header}>
+                <nav className={style.nav_wrapper}>
+                    <NavItem/>
+                    <NavItem/>
+                    <NavItem/>
+                    <NavItem/>
+                    <NavItem/>
+                </nav>
+            </header>
+        </div>
     );
 };
 

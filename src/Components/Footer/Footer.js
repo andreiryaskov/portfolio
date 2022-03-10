@@ -5,15 +5,18 @@ import SocialLinkItem from "../Information/SocialLinkItem/SocialLinkItem";
 
 const Footer = () => {
     return (
-        <div className={style.contactForm}>
-            <h7>Copyright 2022 - All right reserved</h7>
-            <div className={style.link_wrapper}>
-                <SocialLinkItem/>
-                <SocialLinkItem/>
-                <SocialLinkItem/>
-                <SocialLinkItem/>
+        <div className='container'>
+            <div className={style.contactForm}>
+                <h7>Copyright 2022 - All right reserved</h7>
+                <div className={style.link_wrapper}>
+                    <SocialLinkItem/>
+                    <SocialLinkItem/>
+                    <SocialLinkItem/>
+                    <SocialLinkItem/>
+                </div>
             </div>
         </div>
+
     );
 };
 

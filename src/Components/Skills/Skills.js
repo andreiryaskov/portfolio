@@ -5,17 +5,20 @@ import SkillItem from "./SkillItem/SkillItem";
 
 const Skills = () => {
     return (
-        <div className={style.skills}>
-            <h2 className={style.title}>What i do</h2>
-            <div className={style.wrapper}>
-                <SkillItem/>
-                <SkillItem/>
-                <SkillItem/>
-                <SkillItem/>
-                <SkillItem/>
-                <SkillItem/>
+        <div className='container'>
+            <div className={style.skills}>
+                <h2 className={style.title}>What i do</h2>
+                <div className={style.wrapper}>
+                    <SkillItem/>
+                    <SkillItem/>
+                    <SkillItem/>
+                    <SkillItem/>
+                    <SkillItem/>
+                    <SkillItem/>
+                </div>
             </div>
         </div>
+
     );
 };
 
