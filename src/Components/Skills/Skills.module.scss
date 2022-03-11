@@ -1,0 +1,18 @@
+.skills {
+  .title {
+    font-size: 24px;
+    font-weight: 600;
+    position: relative;
+    display: inline-block;
+    letter-spacing: -1px;
+    line-height: 30px;
+  }
+  .wrapper {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-column-gap: 10px;
+    grid-row-gap: 10px;
+  }
+}
+

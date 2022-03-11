@@ -1,12 +1,15 @@
 .information {
   display: flex;
+  flex-wrap: wrap;
   justify-content: flex-start;
   align-items: center;
   .photo {
     position: relative;
     img {
+      margin: 10px;
       width: 300px;
       border-radius: 150px;
+      clip-path: polygon(-2% 0%, 100% 0%, 105% 100%, 0% 100%);
     }
     .social_wrapper {
       display: flex;
@@ -25,6 +28,7 @@
     flex-direction: column;
     justify-content: flex-start;
     padding: 60px 30px 0 30px;
+    width: 65%;
     h1 {
       font-size: 2.4rem;
       line-height: 3rem;
