@@ -1,0 +1,11 @@
+.works_wrapper {
+  width: 100%;
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+
+  .carousel_wrapper {
+    display: flex;
+    overflow: hidden;
+  }
+}
