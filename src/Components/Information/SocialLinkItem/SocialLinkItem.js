@@ -2,10 +2,11 @@ import React from 'react';
 import style from './SocialLinkItem.module.scss';
 import '../../../App.css';
 
-const SocialLinkItem = () => {
+const SocialLinkItem = (props) => {
     return (
         <div className={style.socialLink_item}>
-            <a href="https://github.com/andreiryaskov">git</a>
+            {props.socialLink}
+            <a href={props.link}></a>
         </div>
     );
 };

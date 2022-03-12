@@ -6,12 +6,11 @@
   margin: 50px 0;
   .photo {
     position: relative;
-    img {
-      margin: 10px;
-      width: 300px;
-      border-radius: 150px;
-      clip-path: polygon(-2% 0%, 100% 0%, 105% 100%, 0% 100%);
+      img {
+        width: 300px;
+        border-radius: 50px;
     }
+
     .social_wrapper {
       display: flex;
       background-color: #fff;
@@ -29,7 +28,7 @@
     flex-direction: column;
     justify-content: flex-start;
     padding: 60px 30px 0 30px;
-    width: 65%;
+    box-sizing: border-box;
     h1 {
       font-size: 2.4rem;
       line-height: 3rem;
@@ -43,6 +42,7 @@
     }
     .contacts_wrapper {
       display: flex;
+      justify-content: space-between;
       flex-wrap: wrap;
       margin-top: 45px;
       padding: 0;

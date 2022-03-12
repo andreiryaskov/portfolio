@@ -2,11 +2,11 @@ import React from 'react';
 import style from './InformationItem.module.scss';
 import '../../../App.css';
 
-const InformationItem = () => {
+const InformationItem = (props) => {
     return (
         <div className={style.information_item}>
-            <img src="#" alt="icon"/>
-            <div className={style.contact}>andreiryaskov@gmail.com</div>
+            <div className={style.contact}>{props.contact}</div>
+            <p>{props.data}</p>
         </div>
     );
 };
