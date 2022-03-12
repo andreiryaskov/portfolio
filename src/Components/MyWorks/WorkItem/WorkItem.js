@@ -30,7 +30,10 @@ const WorkItem = () => {
             <img src={project_1}
                  alt="p_1"/>
             <button>Open</button>
-            <div className={style.description}></div>
+            <div className={style.description}>
+                <h2>Project Name</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore eaque impedit molestias nemo quos repellat sed velit. Aspernatur, autem delectus excepturi ipsa libero magni necessitatibus, nisi, ratione repellendus suscipit ullam.</p>
+            </div>
         </div>
     );
 };

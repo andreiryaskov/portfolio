@@ -1,0 +1,10 @@
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  .link_wrapper {
+    display: flex;
+    width: 15%;
+    justify-content: space-between;
+  }
+}

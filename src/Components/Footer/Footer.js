@@ -5,8 +5,8 @@ import SocialLinkItem from "../Information/SocialLinkItem/SocialLinkItem";
 
 const Footer = () => {
     return (
-        <div className='container'>
-            <div className={style.contactForm}>
+        <footer className='container'>
+            <div className={style.footer}>
                 <h7>Copyright 2022 - All right reserved</h7>
                 <div className={style.link_wrapper}>
                     <SocialLinkItem/>
@@ -15,7 +15,7 @@ const Footer = () => {
                     <SocialLinkItem/>
                 </div>
             </div>
-        </div>
+        </footer>
 
     );
 };

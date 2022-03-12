@@ -26,21 +26,23 @@ const Work = () => {
 
     return (
         <div className='container'>
-            <h2 className={style.title}>Work examples</h2>
-            <div className={style.works_wrapper}>
-                <div className={style.carousel_wrapper}>
-                    <WorkItem/>
-                    <WorkItem/>
-                    <WorkItem/>
-                    <WorkItem/>
-                    <WorkItem/>
-                    <WorkItem/>
-                </div>
-                <div className={style.workItem_nav}>
-                    <div id={1}></div>
-                    <div id={2}></div>
-                    <div id={3}></div>
-                    <div id={4}></div>
+            <div className={style.section_works}>
+                <h2 className={style.title}>Work examples</h2>
+                <div className={style.works_wrapper}>
+                    <div className={style.carousel_wrapper}>
+                        <WorkItem/>
+                        <WorkItem/>
+                        <WorkItem/>
+                        <WorkItem/>
+                        <WorkItem/>
+                        <WorkItem/>
+                    </div>
+                    <div className={style.workItem_nav}>
+                        <div id={1}></div>
+                        <div id={2}></div>
+                        <div id={3}></div>
+                        <div id={4}></div>
+                    </div>
                 </div>
             </div>
         </div>
