@@ -1,12 +1,20 @@
 .skills {
-  .title {
+  display: flex;
+  flex-direction: column;
+  margin-top: 30px;
+  h2 {
+    text-decoration: underline #e6ff00;
     font-size: 24px;
     font-weight: 600;
     position: relative;
     display: inline-block;
     letter-spacing: -1px;
     line-height: 30px;
+    @media (max-width: 740px) {
+      text-align: center;
+    }
   }
+
   .wrapper {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -15,6 +23,9 @@
     grid-row-gap: 10px;
     @media(max-width: 1500px) {
       grid-template-columns: repeat(auto-fill, 300px);
+    }
+    @media (max-width: 740px) {
+      justify-content: center;
     }
   }
 }
