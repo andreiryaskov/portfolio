@@ -11,13 +11,6 @@ import {faAt, faCalendarDays, faLocationDot, faPhone} from '@fortawesome/free-so
 
 const Information = () => {
 
-    const contacts = {
-        email: 'andreiryaskov@gmail.com',
-        phone: '89384136353',
-        birthday: '06/01/1988',
-        city: 'Moscow'
-    }
-
     const linkStyle = {
         color: 'black',
         cursor: 'pointer'
@@ -52,7 +45,7 @@ const Information = () => {
         email: {
             icon: <FontAwesomeIcon style={informationIconStyle} icon={faAt}/>,
             data: 'andreiryaskov@gmail.com'
-        } ,
+        },
         phone: {
             icon: <FontAwesomeIcon style={informationIconStyle} icon={faPhone}/>,
             data: '+79384136353'
@@ -60,10 +53,10 @@ const Information = () => {
         birthday: {
             icon: <FontAwesomeIcon style={informationIconStyle} icon={faCalendarDays}/>,
             data: '06/01/1988'
-        } ,
+        },
         location: {
             icon: <FontAwesomeIcon style={informationIconStyle} icon={faLocationDot}/>,
-            data: 'GelenWood'
+            data: '353465, GelenWood'
         }
     }
 
@@ -73,9 +66,7 @@ const Information = () => {
             <div className={style.information}>
 
                 <div className={style.photo}>
-                    <div className={style.clip}>
-                        <img src={img} alt=""/>
-                    </div>
+                    <img src={img} alt=""/>
                     <div className={style.social_wrapper}>
                         <SocialLinkItem socialLink={socialLink.github.icon}
                                         link={socialLink.github.link}/>
