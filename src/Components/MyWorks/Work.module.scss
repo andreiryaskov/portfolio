@@ -8,9 +8,11 @@
 
     .carousel_wrapper {
       display: flex;
+      flex-wrap: wrap;
       justify-content: space-between;
+      @media (max-width: 875px) {
+          justify-content: center;
+      }
     }
-
   }
 }
-
