@@ -1,0 +1,36 @@
+.slider {
+  position: relative;
+  width: 30%;
+  height: 400px;
+  margin: 0;
+  box-sizing: border-box;
+  display: flex;
+
+  align-items: center;
+  justify-content: flex-start;
+  overflow: hidden;
+  .slider_img {
+    box-sizing: border-box;
+    position: absolute;
+    width: 100%;
+    transition: all 0.5s;
+    align-items: center;
+    text-align: center;
+    img {
+      width: inherit;
+    }
+    button {
+      bottom: 100px;
+    }
+  }
+  .slider_img_prev {
+    transform: translateX(-100%);
+  }
+
+  .slider_img_next {
+    transform: translateX(100%);
+  }
+}
+
+
+

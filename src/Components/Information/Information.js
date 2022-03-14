@@ -80,7 +80,7 @@ const Information = () => {
                 </div>
 
                 <div className={style.description}>
-                    <h1>I'm Andrei Riaskov.<br/>I am a frontend developer</h1>
+                    <h1>I'm Andrei Riaskov.<br/>I'm a frontend developer.</h1>
                     <hr></hr>
                     <div className={style.contacts_wrapper}>
                         <InformationItem contact={informationIcons.email.icon}
