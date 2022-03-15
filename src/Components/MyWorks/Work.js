@@ -10,7 +10,7 @@ const Work = () => {
     return (
         <div className='container'>
             <div className={style.section_works}>
-                <h2 className={style.title}>Work examples</h2>
+                <h2>Work examples</h2>
                 <div className={style.works_wrapper}>
                     <div className={style.carousel_wrapper}>
                         <WorkItem/>

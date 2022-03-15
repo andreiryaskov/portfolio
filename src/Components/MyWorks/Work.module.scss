@@ -1,5 +1,18 @@
 .section_works {
-  margin: 50px 0;
+  @media (max-width: 875px) {
+    text-align: center;
+  }
+  h2 {
+    font-size: 24px;
+    font-weight: 600;
+    position: relative;
+    display: inline-block;
+    letter-spacing: -1px;
+    line-height: 30px;
+    margin-top: 0;
+    text-decoration: underline #e6ff00;
+
+  }
   .works_wrapper {
     width: 100%;
     height: min-content;

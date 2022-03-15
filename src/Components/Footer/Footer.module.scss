@@ -2,9 +2,30 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  @media (max-width: 740px) {
+    flex-direction: column;
+  }
   .link_wrapper {
     display: flex;
-    width: 15%;
     justify-content: space-between;
+    border-radius: 50px;
+    //border: 1px solid rgba(230, 255, 0, 0.4);
+    padding: 2px;
+    line-height: 16px;
+    width: 20%;
+    @media (max-width: 740px) {
+      width: 80%;
+      justify-content: space-around;
+    }
+  }
+  p {
+    float: left;
+    font-size: .7rem;
+    line-height: 1rem;
+    color: #FFFFFF;
+    opacity: 0.4;
+    @media (max-width: 740px) {
+      margin-top: 10px;
+    }
   }
 }

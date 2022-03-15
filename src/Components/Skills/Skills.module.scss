@@ -23,6 +23,7 @@
     grid-row-gap: 10px;
     @media(max-width: 1500px) {
       grid-template-columns: repeat(auto-fill, 300px);
+      justify-content: center;
     }
     @media (max-width: 740px) {
       justify-content: center;

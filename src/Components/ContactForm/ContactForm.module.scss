@@ -1,13 +1,17 @@
 .section_contact_form {
-  margin: 50px 0;
-
-  title {
+  margin-bottom: 30px;
+  @media (max-width: 875px) {
+    text-align: center;
+  }
+  h2 {
     font-size: 24px;
     font-weight: 600;
     position: relative;
     display: inline-block;
     letter-spacing: -1px;
     line-height: 30px;
+    margin-top: 0;
+    text-decoration: underline #e6ff00;
   }
   .form_wrapper {
     display: flex;
@@ -16,13 +20,19 @@
     @media (max-width: 500px) {
       width: 300px;
     }
+    @media (max-width: 875px) {
+      align-items: center;
+      width: auto;
+    }
     input {
       width: 80%;
       height: 20px;
       margin-bottom: 10px;
+      outline: none;
     }
     .textarea {
       height: 40px;
+      outline: none;
     }
     button {
       width: 40px;
@@ -31,7 +41,7 @@
       border-radius: 3px;
       border: 1px solid #e6ff00;
       @media (max-width: 500px) {
-        left: calc(150px);
+        left: 150px;
       }
     }
   }

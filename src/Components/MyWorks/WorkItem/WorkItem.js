@@ -11,7 +11,7 @@ const WorkItem = () => {
                  alt="p_1"/>
             <button>Open</button>
             <div className={style.description}>
-                <h2>Project Name</h2>
+                <h3>Project Name</h3>
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
             </div>
         </div>
