@@ -6,6 +6,9 @@
     @media (max-width: 500px) {
       width: 300px;
     }
+    @media (max-width: 310px) {
+      width: 90%;
+    }
   }
   button {
     position: absolute;
@@ -20,6 +23,9 @@
     @media (max-width: 500px) {
       left: 150px;
       top: 65px;
+    }
+    @media (max-width: 310px) {
+      top: 55px;
     }
   }
   .description {

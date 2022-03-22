@@ -1,6 +1,7 @@
 body {
   background-color: black;
   color: white;
+  font-family: 'Titillium Web', sans-serif;
 }
 
 .container {
@@ -20,3 +21,28 @@ body {
   justify-content: center;
   align-items: center;
 }
+
+.menu_overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #fff;
+  opacity: .75;
+}
+.hamburger {
+  /*width: 50px;*/
+  /*height: 50px;*/
+  background: #e6ff00;
+  border-radius: 100%;
+  position: fixed;
+  right: 150px;
+  top: 150px;
+}
+
+@font-face {
+  font-family: "Open Sans";
+  src: url('https://fonts.googleapis.com/css2?family=Titillium+Web:wght@200;400&display=swap');
+}
+

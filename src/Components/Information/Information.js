@@ -63,8 +63,8 @@ const Information = () => {
 
     return (
         <div className='container'>
-            <div className={style.information}>
 
+            <div className={style.information}>
                 <div className={style.photo}>
                     <img src={img} alt=""/>
                     <div className={style.social_wrapper}>
@@ -80,6 +80,7 @@ const Information = () => {
                 </div>
 
                 <div className={style.description}>
+
                     <h1>I'm Andrei Riaskov.<br/>I'm a frontend developer.</h1>
                     <hr></hr>
                     <div className={style.contacts_wrapper}>

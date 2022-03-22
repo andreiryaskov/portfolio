@@ -15,6 +15,7 @@
     align-items: center;
   }
 
+
   .photo {
     grid-area: 1 / 1 / 2 / 2;
     position: relative;
@@ -58,15 +59,19 @@
       font-size: 2.4rem;
       line-height: 3rem;
       font-weight: 500;
-      margin-bottom: 40px;
+      @media (min-width: 917px) {
+        margin-bottom: 40px;
+      }
     }
     hr {
       background-color: #e6ff00;
       height: 1px;
       opacity: 0.2;
       width: 100%;
-      margin-bottom: 40px;
       margin-top: 0;
+      @media (min-width: 917px) {
+        margin-bottom: 40px;
+      }
     }
     .contacts_wrapper {
       display: flex;
@@ -79,7 +84,7 @@
       font: inherit;
       vertical-align: baseline;
       @media (max-width: 740px) {
-        justify-content: center;
+        justify-content: flex-start;
       }
     }
   }
@@ -89,6 +94,8 @@
   text-align: left;
   margin-top: 30px;
 }
+
+
 
 
 

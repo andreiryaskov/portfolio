@@ -3,7 +3,7 @@ import style from './Skills.module.scss';
 import '../../App.css';
 import SkillItem from "./SkillItem/SkillItem";
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
-import {faReact, faJs, faGitlab, faHtml5, faSass} from "@fortawesome/free-brands-svg-icons";
+import {faGithub, faHtml5, faReact, faSass} from "@fortawesome/free-brands-svg-icons";
 
 const Skills = () => {
 
@@ -48,9 +48,11 @@ const Skills = () => {
             icon: <img style={jsIconStyle} src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAABmJLR0QA/wD/AP+gvaeTAAABjUlEQVRoge2YsS4EURSG/yMKm2gUWM0+gHgBBQ2FnlKlJiQK1XYStAothcoDaDyBRKVVSDQmUW1ISIRPsVessSS7M3dccr5mMicz55xvbu7MvSM5jtMTwBKQkS63wGK+b+sikkkar+Sp9U9mZhM/XvGuXVFDPfNdfwO/0UwMXCQ1XCQ1XCQ1XCQ1XCQ1/o3IYIykwJCkmqQnM3vsiDckycxuYtTNN1F49QtshjQ74XwGuO7YU6yV3V+UEckVrkk6kTQq6VDSq6TLsutEF5E0Kaku6czMVmIVqWKy36k9CtPAQqwi0UXCxD6QNCzpFNgFvmyxi1LV63ddUlPtkdmStFF2gUpEzOzVzLYlLYdQ6XMllshYON7n4ufh+BKp7gdFviNAAzgCWiHNPDAFXADHwFWIN6P3V1BkLtz+DOwDBswCDyHeAvaAvl/7lYiE++vhI9gZM2Ck35y5XNWIxMZ/0P0VXCQ1XCQ1XCQ1XCQ1XCQ1ui2nM0n1lBeOavf4iW4jstrtwoTI1O7RcZweeAO+77Kvt+8B6wAAAABJRU5ErkJggg=="/>,
             data: 'JavaScript+TypeScript'
         },
-        materialUi: {
-            icon: <div style={materialUiStyle}></div>,
-            data: 'Material UI'
+        github: {
+            icon: <FontAwesomeIcon style={skillsItemStyle}
+                                   icon={faGithub} />,
+                // <div style={materialUiStyle}></div>,
+            data: 'Git'
         },
         html: {
             icon: <FontAwesomeIcon style={skillsItemStyle}
@@ -75,8 +77,8 @@ const Skills = () => {
                                descr={skillsItemIcon.redux.data}/>
                     <SkillItem icon={skillsItemIcon.ts.icon}
                                descr={skillsItemIcon.ts.data}/>
-                    <SkillItem icon={skillsItemIcon.materialUi.icon}
-                               descr={skillsItemIcon.materialUi.data}/>
+                    <SkillItem icon={skillsItemIcon.github.icon}
+                               descr={skillsItemIcon.github.data}/>
                     <SkillItem icon={skillsItemIcon.html.icon}
                                descr={skillsItemIcon.html.data}/>
                     <SkillItem icon={skillsItemIcon.sass.icon}
