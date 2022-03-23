@@ -1,5 +1,5 @@
 import './App.css';
-import Menu from './Components/Header/Menu';
+import Menu from './Components/Menu/Menu';
 import Information from "./Components/Information/Information";
 import Skills from "./Components/Skills/Skills";
 import Work from "./Components/MyWorks/Work";
@@ -12,12 +12,14 @@ function App() {
 
     const [menuActive, setMenuActive] = useState(false)
 
-    const items = [
+    const menuItems = [
         {value: 'Info', href: '/information'},
         {value: 'Skills', href: '/skills'},
         {value: 'Projects', href: '/proj'},
         {value: 'Write me', href: '/write'}
     ]
+
+    const infoDescription = 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad aspernatur cum doloribus id illum incidunt ipsam minima molestiae nemo optio praesentium quibusdam temporibus, veniam! Aperiam assumenda earum esse modi recusandae!'
 
     const isActive = (e) => {
         setMenuActive(!menuActive)
@@ -26,12 +28,12 @@ function App() {
     return (
         <div className="App">
             <Nav isActive={isActive}/>
-            <Information/>
+            <Information infoDescription={infoDescription}/>
             <Skills/>
             <Work/>
             <ContactForm/>
             <Footer/>
-            <Menu items={items} active={menuActive}/>
+            <Menu menuItems={menuItems} active={menuActive}/>
         </div>
 
     );

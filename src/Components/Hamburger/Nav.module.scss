@@ -1,9 +1,11 @@
 .nav {
   height: 50px;
-  width: 100%;
+  width: 50px;
+  border-radius: 100%;
   background-color: #e6ff00;
   position: fixed;
-  top: 0;
+  top: 30px;
+  right: 150px;
   z-index: 50;
   display: flex;
   justify-content: flex-end;
@@ -13,14 +15,14 @@
     height: 20px;
     position: relative;
     right: 0;
-    margin-right: 20px;
+    margin-right: 0px;
     cursor: pointer;
     span {
       position: absolute;
       top: 9px;
       width: 30px;
       background-color: black;
-      height: 2px;
+      height: 3px;
       transform: translateX(-10px);
     }
 
@@ -31,7 +33,7 @@
     top: 0;
     width: 20px;
     background-color: black;
-    height: 2px;
+    height: 3px;
   }
   .burgerBtn:after {
     content: '';
@@ -39,7 +41,7 @@
     bottom: 0;
     width: 20px;
     background-color: black;
-    height: 2px;
+    height: 3px;
   }
 
 }

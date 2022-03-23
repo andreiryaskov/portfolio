@@ -9,7 +9,7 @@ import {faGithub, faLinkedinIn, faTelegram, faVk} from '@fortawesome/free-brands
 import {faAt, faCalendarDays, faLocationDot, faPhone} from '@fortawesome/free-solid-svg-icons'
 
 
-const Information = () => {
+const Information = ({infoDescription}) => {
 
     const linkStyle = {
         color: 'black',
@@ -80,7 +80,6 @@ const Information = () => {
                 </div>
 
                 <div className={style.description}>
-
                     <h1>I'm Andrei Riaskov.<br/>I'm a frontend developer.</h1>
                     <hr></hr>
                     <div className={style.contacts_wrapper}>
@@ -97,10 +96,7 @@ const Information = () => {
 
             </div>
             <div className={style.great_description}>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam delectus deserunt dolore eos error
-                excepturi harum id magnam minus nam optio qui repudiandae, sed, sit sunt ut, vel veritatis vitae! Lorem
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam delectus deserunt dolore eos error
-                excepturi harum id magnam minus nam optio qui repudiandae, sed, sit sunt ut, vel veritatis vitae! Lorem
+                {infoDescription}
             </div>
         </div>
     );
