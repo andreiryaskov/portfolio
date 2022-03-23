@@ -10,6 +10,7 @@
   display: flex;
   justify-content: flex-end;
   align-items: center;
+
   .burgerBtn {
     width: 30px;
     height: 20px;
@@ -17,6 +18,7 @@
     right: 0;
     margin-right: 0px;
     cursor: pointer;
+
     span {
       position: absolute;
       top: 9px;
@@ -25,8 +27,8 @@
       height: 3px;
       transform: translateX(-10px);
     }
-
   }
+
   .burgerBtn:before {
     content: '';
     position: absolute;
@@ -35,6 +37,7 @@
     background-color: black;
     height: 3px;
   }
+
   .burgerBtn:after {
     content: '';
     position: absolute;
@@ -43,5 +46,36 @@
     background-color: black;
     height: 3px;
   }
+}
 
+
+.burgerBtn_active {
+  width: 30px;
+  height: 20px;
+  position: relative;
+  right: 0;
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+.burgerBtn_active:before {
+  content: '';
+  position: absolute;
+  top: 8px;
+  width: 30px;
+  background-color: black;
+  height: 3px;
+  transform: rotate(45deg);
+  transition: ease 0.4s;
+}
+
+.burgerBtn_active:after {
+  content: '';
+  position: absolute;
+  bottom: 9px;
+  width: 30px;
+  background-color: black;
+  height: 3px;
+  transform: rotate(-45deg);
+  transition: ease 0.4s;
 }
