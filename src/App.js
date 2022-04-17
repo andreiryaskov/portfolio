@@ -26,15 +26,20 @@ function App() {
     }
 
     return (
-        <div className="App">
-            <Nav isActive={isActive}/>
-            <Information infoDescription={infoDescription}/>
-            <Skills/>
-            <Work/>
-            <ContactForm/>
-            <Footer/>
-            <Menu menuItems={menuItems} active={menuActive}/>
+        <div className='app__wrapper'>
+            <div className='app__wrapper_burger container'>
+                <Nav isActive={isActive}/>
+            </div>
+            <div className="App">
+                <Information infoDescription={infoDescription}/>
+                <Skills/>
+                <Work/>
+                <ContactForm/>
+                <Footer/>
+                <Menu menuItems={menuItems} active={menuActive}/>
+            </div>
         </div>
+
 
     );
 }
