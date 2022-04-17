@@ -36,6 +36,9 @@ function App() {
                 <Work/>
                 <ContactForm/>
                 <Footer/>
+                {/*<Menu menuItems={menuItems} active={menuActive}/>*/}
+            </div>
+            <div className='container'>
                 <Menu menuItems={menuItems} active={menuActive}/>
             </div>
         </div>
