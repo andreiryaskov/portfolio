@@ -7,9 +7,11 @@ import img from './../../img/free.jpg'
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome'
 import {faGithub, faLinkedinIn, faTelegram, faVk} from '@fortawesome/free-brands-svg-icons'
 import {faAt, faCalendarDays, faLocationDot, faPhone} from '@fortawesome/free-solid-svg-icons'
+import Description from "../Description/Description";
+import Slide from 'react-reveal/Slide';
 
 
-const Information = ({infoDescription}) => {
+const Information = () => {
 
     const linkStyle = {
         color: 'black',
@@ -20,81 +22,118 @@ const Information = ({infoDescription}) => {
         color: '#e6ff00'
     }
 
-    const socialLink = {
-        github: {
+    const socialLink = [
+        {
+            linkItem: {
                 icon: <FontAwesomeIcon style={linkStyle} icon={faGithub}/>,
-                link: 'https://github.com/andreiryaskov'
+                link: 'https://github.com/andreiryaskov',
+                id: 1
+            }
         },
-        in: {
-            icon: <FontAwesomeIcon style={linkStyle} icon={faLinkedinIn}/>,
-            link: 'https://www.linkedin.com/feed/'
+        {
+            linkItem:
+                {
+                    icon: <FontAwesomeIcon style={linkStyle} icon={faLinkedinIn}/>,
+                    link: 'https://www.linkedin.com/feed/',
+                    id: 2
+                }
         },
-        tg: {
-            icon: <FontAwesomeIcon style={linkStyle} icon={faTelegram}/>,
-            link: '@andreiryaskov'
+        {
+            linkItem: {
+                icon: <FontAwesomeIcon style={linkStyle} icon={faTelegram}/>,
+                link: '@andreiryaskov',
+                id: 3
+            }
         },
-        vk: {
-            icon: <FontAwesomeIcon style={linkStyle} icon={faVk}/>,
-            link: 'https://vk.com/feed'
+        {
+            linkItem: {
+                icon: <FontAwesomeIcon style={linkStyle} icon={faVk}/>,
+                link: 'https://vk.com/feed',
+                id: 4
+            }
         }
-    }
+    ]
 
-    const informationIcons = {
-        email: {
-            icon: <FontAwesomeIcon style={informationIconStyle} icon={faAt}/>,
-            data: 'andreiryaskov@gmail.com'
+    const informationIcons = [
+        {
+            infItem: {
+                icon: <FontAwesomeIcon style={informationIconStyle} icon={faAt}/>,
+                data: 'andreiryaskov@gmail.com',
+                id: 1
+            }
         },
-        phone: {
-            icon: <FontAwesomeIcon style={informationIconStyle} icon={faPhone}/>,
-            data: '+79384136353'
+        {
+            infItem: {
+                icon: <FontAwesomeIcon style={informationIconStyle} icon={faPhone}/>,
+                data: '+79384136353',
+                id: 2
+            }
         },
-        birthday: {
-            icon: <FontAwesomeIcon style={informationIconStyle} icon={faCalendarDays}/>,
-            data: '06/01/1988'
+        {
+            infItem: {
+                icon: <FontAwesomeIcon style={informationIconStyle} icon={faCalendarDays}/>,
+                data: '06/01/1988',
+                id: 3
+            }
         },
-        location: {
-            icon: <FontAwesomeIcon style={informationIconStyle} icon={faLocationDot}/>,
-            data: '353465, GelenWood'
+        {
+            infItem: {
+                icon: <FontAwesomeIcon style={informationIconStyle} icon={faLocationDot}/>,
+                data: '353465, GelenWood',
+                id: 4
+            }
         }
-    }
-
+    ]
 
     return (
         <div className='container'>
 
             <div className={style.information}>
                 <div className={style.photo}>
-                    <img src={img} alt=""/>
-                    <div className={style.social_wrapper}>
-                        <SocialLinkItem socialLink={socialLink.github.icon}
-                                        link={socialLink.github.link}/>
-                        <SocialLinkItem socialLink={socialLink.in.icon}
-                                        link={socialLink.in.link}/>
-                        <SocialLinkItem socialLink={socialLink.tg.icon}
-                                        link={socialLink.tg.link}/>
-                        <SocialLinkItem socialLink={socialLink.vk.icon}
-                                        link={socialLink.vk.link}/>
-                    </div>
+                    <Slide top>
+                        <img src={img} alt=""/>
+                    </Slide>
+
+                    <Slide left>
+                        <div className={style.social_wrapper}>
+                            {
+                                socialLink.map(i => {
+                                    return <SocialLinkItem socialLink={i.linkItem.icon}
+                                                           link={i.linkItem.link}
+                                                           id={i.linkItem.id}
+                                                           key={i.linkItem.id}/>
+                                })
+                            }
+                        </div>
+                    </Slide>
                 </div>
 
                 <div className={style.description}>
-                    <h1>I'm Andrei Riaskov<br/>I'm a frontend developer</h1>
-                    <hr></hr>
-                    <div className={style.contacts_wrapper}>
-                        <InformationItem contact={informationIcons.email.icon}
-                                         data={informationIcons.email.data}/>
-                        <InformationItem contact={informationIcons.phone.icon}
-                                         data={informationIcons.phone.data}/>
-                        <InformationItem contact={informationIcons.birthday.icon}
-                                         data={informationIcons.birthday.data}/>
-                        <InformationItem contact={informationIcons.location.icon}
-                                         data={informationIcons.location.data}/>
-                    </div>
+                    <Slide top>
+                        <h1>I'm Andrei Riaskov<br/>I'm a frontend developer</h1>
+                    </Slide>
+
+                    <Slide right>
+                        <hr></hr>
+                    </Slide>
+
+                    <Slide bottom>
+                        <div className={style.contacts_wrapper}>
+                            {
+                                informationIcons.map(i => {
+                                    return <InformationItem id={i.infItem.id}
+                                                            key={i.infItem.id}
+                                                            contact={i.infItem.icon}
+                                                            data={i.infItem.data}/>
+                                })
+                            }
+                        </div>
+                    </Slide>
                 </div>
 
             </div>
             <div className={style.great_description}>
-                {infoDescription}
+                <Description/>
             </div>
         </div>
     );

@@ -2,20 +2,30 @@ import React from 'react';
 import '../../App.css';
 import style from './Menu.module.scss';
 
-const Menu = ({menuItems, active}) => {
+const Menu = ({active}) => {
+
+    const menuItems = [
+        {value: 'Info', href: '/information', id: 1},
+        {value: 'Skills', href: '/skills', id: 2},
+        {value: 'Projects', href: '/proj', id: 3},
+        {value: 'Write me', href: '/write', id: 4}
+    ]
+
     return (
         <div className={active ? style.menu_wrapper_active : style.menu_wrapper}>
-            {/*<div className={style.blur}/>*/}
             <div className={style.menu_content}>
                 <ul>
                     {menuItems.map(item =>
                         <li>
-                            <a href={item.href}>{item.value}</a>
+                            <a href={item.href}
+                               key={item.id}
+                               id={item.id}>
+                                {item.value}
+                            </a>
                         </li>
                     )}
                 </ul>
             </div>
-
         </div>
     );
 };

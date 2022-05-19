@@ -13,15 +13,6 @@ function App() {
 
     const [menuActive, setMenuActive] = useState(false)
 
-    const menuItems = [
-        {value: 'Info', href: '/information'},
-        {value: 'Skills', href: '/skills'},
-        {value: 'Projects', href: '/proj'},
-        {value: 'Write me', href: '/write'}
-    ]
-
-    const infoDescription = 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad aspernatur cum doloribus id illum incidunt ipsam minima molestiae nemo optio praesentium quibusdam temporibus, veniam! Aperiam assumenda earum esse modi recusandae!'
-
     const isActive = (e) => {
         setMenuActive(!menuActive)
     }
@@ -33,19 +24,16 @@ function App() {
             </div>
             <div className="App">
                 <ParticlesBackground/>
-                <Information infoDescription={infoDescription}/>
+                <Information/>
                 <Skills/>
                 <Work/>
                 <ContactForm/>
                 <Footer/>
-                {/*<Menu menuItems={menuItems} active={menuActive}/>*/}
             </div>
             <div className='container'>
-                <Menu menuItems={menuItems} active={menuActive}/>
+                <Menu active={menuActive}/>
             </div>
         </div>
-
-
     );
 }
 
