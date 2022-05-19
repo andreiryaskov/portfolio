@@ -21,12 +21,10 @@ const Information = ({infoDescription}) => {
     }
 
     const socialLink = {
-        github:
-            {
+        github: {
                 icon: <FontAwesomeIcon style={linkStyle} icon={faGithub}/>,
                 link: 'https://github.com/andreiryaskov'
-            }
-        ,
+        },
         in: {
             icon: <FontAwesomeIcon style={linkStyle} icon={faLinkedinIn}/>,
             link: 'https://www.linkedin.com/feed/'
@@ -80,7 +78,7 @@ const Information = ({infoDescription}) => {
                 </div>
 
                 <div className={style.description}>
-                    <h1>I'm Andrei Riaskov.<br/>I'm a frontend developer.</h1>
+                    <h1>I'm Andrei Riaskov<br/>I'm a frontend developer</h1>
                     <hr></hr>
                     <div className={style.contacts_wrapper}>
                         <InformationItem contact={informationIcons.email.icon}

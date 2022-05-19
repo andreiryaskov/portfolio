@@ -7,6 +7,7 @@ import ContactForm from "./Components/ContactForm/ContactForm";
 import Footer from "./Components/Footer/Footer";
 import React, {useState} from "react";
 import Nav from "./Components/Hamburger/Nav";
+import ParticlesBackground from "./Components/ParticlesBackground/ParticlesBackground";
 
 function App() {
 
@@ -31,6 +32,7 @@ function App() {
                 <Nav isActive={isActive}/>
             </div>
             <div className="App">
+                <ParticlesBackground/>
                 <Information infoDescription={infoDescription}/>
                 <Skills/>
                 <Work/>

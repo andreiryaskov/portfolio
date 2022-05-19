@@ -23,8 +23,11 @@
     "react-icons": "^4.3.1",
     "react-scripts": "5.0.0",
     "react-slick": "^0.28.1",
+    "react-tsparticles": "^2.0.6",
     "sass": "^1.49.9",
     "swiper": "^8.0.7",
+    "tsparticles": "^2.0.6",
+    "tsparticles-engine": "^2.0.6",
     "web-vitals": "^2.1.0"
   },
   "scripts": {
