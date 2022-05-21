@@ -6,6 +6,51 @@ import WorkItem from "./WorkItem/WorkItem";
 
 const Work = () => {
 
+    const descrProject = [
+        {
+            project: {
+                name: 'jbhjbh,',
+                descr: 'hkjhgbkjb,kjn kjhkj jbjjhb jbjk',
+                id: 1
+            }
+        },
+        {
+            project: {
+                name: 'jbhjbh,',
+                descr: 'hkjhgbkjb,kjn kjhkj jbjjhb jbjk',
+                id: 2
+            }
+        },
+        {
+            project: {
+                name: 'jbhjbh,',
+                descr: 'hkjhgbkjb,kjn kjhkj jbjjhb jbjk',
+                id: 3
+            }
+        },
+        {
+            project: {
+                name: 'jbhjbh,',
+                descr: 'hkjhgbkjb,kjn kjhkj jbjjhb jbjk',
+                id: 4
+            }
+        },
+        {
+            project: {
+                name: 'jbhjbh,',
+                descr: 'hkjhgbkjb,kjn kjhkj jbjjhb jbjk',
+                id: 5
+            }
+        },
+        {
+            project: {
+                name: 'jbhjbh,',
+                descr: 'hkjhgbkjb,kjn kjhkj jbjjhb jbjk',
+                id: 6
+            }
+        }
+    ]
+
 
     return (
         <div className='container'>
@@ -13,18 +58,18 @@ const Work = () => {
                 <h2>Work examples</h2>
                 <div className={style.works_wrapper}>
                     <div className={style.carousel_wrapper}>
-                        <WorkItem/>
-                        <WorkItem/>
-                        <WorkItem/>
-                        <WorkItem/>
-                        <WorkItem/>
-                        <WorkItem/>
-
+                        {
+                            descrProject.map(d => {
+                                return <WorkItem descr={d.project.descr}
+                                                 name={d.project.name}
+                                                 id={d.project.id}
+                                                 key={d.project.id}/>
+                            })
+                        }
                     </div>
                 </div>
             </div>
         </div>
-
     );
 };
 

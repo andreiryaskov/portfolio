@@ -3,18 +3,21 @@ import style from './WorkItem.module.scss';
 import '../../../App.css';
 import project_1 from '../../../img/project_1.png';
 import Slide from 'react-reveal/Slide';
+import Button from "../../Button/Button";
+import Description from "../../Description/Description";
 
-const WorkItem = () => {
+const WorkItem = ({name, descr, id}) => {
 
     return (
         <Slide bottom>
-            <div className={style.wrapper}>
+            <div className={style.wrapper} id={id}>
                 <img src={project_1}
                      alt="p_1"/>
-                <button>Open</button>
+                <Button buttonName={'Open'}
+                        mixButton={style.mixButton} />
                 <div className={style.description}>
-                    <h3>Project Name</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                    <h3>{name}</h3>
+                    <Description description={descr}/>
                 </div>
             </div>
         </Slide>

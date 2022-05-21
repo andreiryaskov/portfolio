@@ -31,7 +31,7 @@ function App() {
                 <Footer/>
             </div>
             <div className='container'>
-                <Menu active={menuActive}/>
+                    <Menu active={menuActive}/>
             </div>
         </div>
     );

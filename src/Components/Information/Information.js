@@ -22,6 +22,9 @@ const Information = () => {
         color: '#e6ff00'
     }
 
+    const descr = 'Try using words that might appear on the page you’re looking for. For example, "cake recipes" instead of "how tTry using words that might appear on the page you’re looking for. For example, "cake recipes" instead of "how to make a cake.o make a cake.'
+
+
     const socialLink = [
         {
             linkItem: {
@@ -133,7 +136,7 @@ const Information = () => {
 
             </div>
             <div className={style.great_description}>
-                <Description/>
+                <Description description={descr}/>
             </div>
         </div>
     );
