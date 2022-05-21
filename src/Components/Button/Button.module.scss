@@ -1,13 +1,10 @@
 .buttonStyle {
-  //position: absolute;
-  //left: 175px;
-  //top: 75px;
-  //transform: translateX(-50%);
   width: 40px;
   height: 20px;
   padding: 0;
   border-radius: 3px;
   border: 1px solid #e6ff00;
+  cursor: pointer;
   @media (max-width: 500px) {
     left: 150px;
     top: 65px;

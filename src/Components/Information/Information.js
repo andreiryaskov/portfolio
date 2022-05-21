@@ -91,7 +91,8 @@ const Information = () => {
     return (
         <div className='container'>
 
-            <div className={style.information}>
+            <div className={style.information}
+                 id={'information'}>
                 <div className={style.photo}>
                     <Slide top>
                         <img src={img} alt=""/>

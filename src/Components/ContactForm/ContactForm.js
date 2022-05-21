@@ -12,7 +12,8 @@ const ContactForm = () => {
     return (
         <div className='container'>
             <Slide left>
-                <form className={style.section_contact_form}>
+                <form className={style.section_contact_form}
+                      id={'contact'}>
                     <h2>Write me</h2>
                     <div className={style.form_wrapper}>
                         <Input type={'text'}/>

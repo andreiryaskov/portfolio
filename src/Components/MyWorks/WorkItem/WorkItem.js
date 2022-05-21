@@ -16,8 +16,10 @@ const WorkItem = ({name, descr, id}) => {
                 <Button buttonName={'Open'}
                         mixButton={style.mixButton} />
                 <div className={style.description}>
-                    <h3>{name}</h3>
-                    <Description description={descr}/>
+                    <Slide left>
+                        <h3>{name}</h3>
+                        <Description description={descr}/>
+                    </Slide>
                 </div>
             </div>
         </Slide>

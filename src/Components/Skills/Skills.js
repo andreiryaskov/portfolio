@@ -87,7 +87,8 @@ const Skills = () => {
 
     return (
         <div className='container'>
-            <div className={style.skills}>
+            <div className={style.skills}
+                 id={'skills'}>
                 <h2>What i do</h2>
                 <div className={style.wrapper}>
                     {

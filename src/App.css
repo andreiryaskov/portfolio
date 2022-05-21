@@ -2,6 +2,7 @@ body {
   background-color: black;
   color: white;
   font-family: 'Titillium Web', sans-serif;
+
 }
 
 .container {
@@ -19,6 +20,7 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
+
 }
 
 .app__wrapper_burger {
@@ -33,6 +35,7 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  /*scroll-behavior: smooth;*/
 }
 
 .menu_overlay {

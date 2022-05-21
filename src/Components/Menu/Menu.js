@@ -5,10 +5,10 @@ import style from './Menu.module.scss';
 const Menu = ({active}) => {
 
     const menuItems = [
-        {value: 'Info', href: '/information', id: 1},
-        {value: 'Skills', href: '/skills', id: 2},
-        {value: 'Projects', href: '/proj', id: 3},
-        {value: 'Write me', href: '/write', id: 4}
+        {value: 'Info', href: '#information', id: 1},
+        {value: 'Skills', href: '#skills', id: 2},
+        {value: 'Projects', href: '#works', id: 3},
+        {value: 'Write me', href: '#contact', id: 4}
     ]
 
     return (
@@ -19,7 +19,7 @@ const Menu = ({active}) => {
                         <li>
                             <a href={item.href}
                                key={item.id}
-                               id={item.id}>
+                               id={item.id} href>
                                 {item.value}
                             </a>
                         </li>
