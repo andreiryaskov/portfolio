@@ -19,7 +19,7 @@ const Menu = ({active}) => {
                         <li>
                             <a href={item.href}
                                key={item.id}
-                               id={item.id} href>
+                               id={item.id}>
                                 {item.value}
                             </a>
                         </li>
