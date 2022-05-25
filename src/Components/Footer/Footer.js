@@ -5,6 +5,7 @@ import SocialLinkItem from "../Information/SocialLinkItem/SocialLinkItem";
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 import {faGithub, faLinkedinIn, faTelegram, faVk} from "@fortawesome/free-brands-svg-icons";
 import Slide from 'react-reveal/Slide';
+import {NavLink} from "react-bootstrap";
 
 const Footer = () => {
 
@@ -47,6 +48,10 @@ const Footer = () => {
         }
     ]
 
+    const linkCallback = () => {
+        alert('n,kh')
+    }
+
     return (
         <footer className='container'>
             <Slide bottom>
@@ -59,7 +64,8 @@ const Footer = () => {
                                         <SocialLinkItem socialLink={i.socItem.icon}
                                                         link={i.socItem.link}
                                                         key={i.socItem.id}
-                                                        id={i.socItem.id}/>
+                                                        id={i.socItem.id}
+                                                        onClick={linkCallback}/>
                                     </Slide>
                                 )
                             })
