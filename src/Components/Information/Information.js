@@ -88,6 +88,10 @@ const Information = () => {
         }
     ]
 
+    const linkCallback = () => {
+        alert('jbjkb')
+    }
+
     return (
         <div className='container'>
 
@@ -105,7 +109,8 @@ const Information = () => {
                                     return <SocialLinkItem socialLink={i.linkItem.icon}
                                                            link={i.linkItem.link}
                                                            id={i.linkItem.id}
-                                                           key={i.linkItem.id}/>
+                                                           key={i.linkItem.id}
+                                                           onClick={linkCallback}/>
                                 })
                             }
                         </div>
