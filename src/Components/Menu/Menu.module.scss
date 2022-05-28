@@ -50,6 +50,7 @@
 
 .menu_wrapper{
   transform: translateX(100%);
+  transition: ease 0.4s;
   .menu_content {
     display: none;
   }

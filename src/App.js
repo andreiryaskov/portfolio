@@ -13,7 +13,7 @@ function App() {
 
     const [menuActive, setMenuActive] = useState(false)
 
-    const isActive = (e) => {
+    const isActive = () => {
         setMenuActive(!menuActive)
     }
 

@@ -9,14 +9,40 @@ import {faGithub, faLinkedinIn, faTelegram, faVk} from '@fortawesome/free-brands
 import {faAt, faCalendarDays, faLocationDot, faPhone} from '@fortawesome/free-solid-svg-icons'
 import Description from "../Description/Description";
 import Slide from 'react-reveal/Slide';
+import {Link} from "react-router-dom";
 
+
+const linkStyle = {
+    color: 'black',
+    cursor: 'pointer'
+}
+
+export const socialLink = [{
+    icon: <FontAwesomeIcon style={linkStyle} icon={faGithub}/>,
+    link: 'https://github.com/andreiryaskov',
+    id: 1
+
+}, {
+    icon: <FontAwesomeIcon style={linkStyle} icon={faLinkedinIn}/>,
+    link: 'https://www.linkedin.com/feed/',
+    id: 2
+}, {
+    icon: <FontAwesomeIcon style={linkStyle} icon={faTelegram}/>,
+    link: 'https://t.me/andreiryaskov',
+    id: 3
+}, {
+    icon: <FontAwesomeIcon style={linkStyle} icon={faVk}/>,
+    link: 'https://vk.com/feed',
+    id: 4
+}
+]
 
 const Information = () => {
 
-    const linkStyle = {
-        color: 'black',
-        cursor: 'pointer'
-    }
+    // const linkStyle = {
+    //     color: 'black',
+    //     cursor: 'pointer'
+    // }
 
     const informationIconStyle = {
         color: '#e6ff00'
@@ -25,37 +51,37 @@ const Information = () => {
     const descr = 'Try using words that might appear on the page you’re looking for. For example, "cake recipes" instead of "how tTry using words that might appear on the page you’re looking for. For example, "cake recipes" instead of "how to make a cake.o make a cake.'
 
 
-    const socialLink = [
-        {
-            linkItem: {
-                icon: <FontAwesomeIcon style={linkStyle} icon={faGithub}/>,
-                link: 'https://github.com/andreiryaskov',
-                id: 1
-            }
-        },
-        {
-            linkItem:
-                {
-                    icon: <FontAwesomeIcon style={linkStyle} icon={faLinkedinIn}/>,
-                    link: 'https://www.linkedin.com/feed/',
-                    id: 2
-                }
-        },
-        {
-            linkItem: {
-                icon: <FontAwesomeIcon style={linkStyle} icon={faTelegram}/>,
-                link: '@andreiryaskov',
-                id: 3
-            }
-        },
-        {
-            linkItem: {
-                icon: <FontAwesomeIcon style={linkStyle} icon={faVk}/>,
-                link: 'https://vk.com/feed',
-                id: 4
-            }
-        }
-    ]
+    // const socialLink = [
+    //     {
+    //         linkItem: {
+    //             icon: <FontAwesomeIcon style={linkStyle} icon={faGithub}/>,
+    //             link: 'https://github.com/andreiryaskov',
+    //             id: 1
+    //         }
+    //     },
+    //     {
+    //         linkItem:
+    //             {
+    //                 icon: <FontAwesomeIcon style={linkStyle} icon={faLinkedinIn}/>,
+    //                 link: 'https://www.linkedin.com/feed/',
+    //                 id: 2
+    //             }
+    //     },
+    //     {
+    //         linkItem: {
+    //             icon: <FontAwesomeIcon style={linkStyle} icon={faTelegram}/>,
+    //             link: 'https://t.me/andreiryaskov',
+    //             id: 3
+    //         }
+    //     },
+    //     {
+    //         linkItem: {
+    //             icon: <FontAwesomeIcon style={linkStyle} icon={faVk}/>,
+    //             link: 'https://vk.com/feed',
+    //             id: 4
+    //         }
+    //     }
+    // ]
 
     const informationIcons = [
         {
@@ -88,8 +114,9 @@ const Information = () => {
         }
     ]
 
-    const linkCallback = () => {
-        alert('jbjkb')
+
+    const linkCallback = (link) => {
+        <Link to={link}/>
     }
 
     return (
@@ -106,10 +133,10 @@ const Information = () => {
                         <div className={style.social_wrapper}>
                             {
                                 socialLink.map(i => {
-                                    return <SocialLinkItem socialLink={i.linkItem.icon}
-                                                           link={i.linkItem.link}
-                                                           id={i.linkItem.id}
-                                                           key={i.linkItem.id}
+                                    return <SocialLinkItem socialLink={i.icon}
+                                                           link={i.link}
+                                                           id={i.id}
+                                                           key={i.id}
                                                            onClick={linkCallback}/>
                                 })
                             }
